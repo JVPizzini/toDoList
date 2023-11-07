@@ -3,12 +3,12 @@ import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 // Types
-
 type InputProps = {
   handleAdd: (task: string) => void;
 };
 
 export function Input({ handleAdd }: InputProps) {
+  
   // States
   const [text, setText] = useState("");
 

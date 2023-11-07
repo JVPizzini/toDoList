@@ -28,13 +28,13 @@ export function ToDoList({
   handleRemove,
   handleDeleteAll,
 }: ToDoListProps) {
+  
   // Memo
   const amountDone = useMemo(() => {
     return data.length <= 0 ? 0 : data.filter((item) => item.isActive).length;
   }, [data]);
 
   // handle
-
   const handleDelete = () => {
     Alert.alert(
       "ATENÇÃO",
